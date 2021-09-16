@@ -1,0 +1,17 @@
+{
+	"name": "master-gutenberg-blocks-pack",
+	"version": "1.0.0",
+	"main": "plugin.php",
+	"repository": "https://github.com/Robson16/master-gutenberg-blocks-pack.git",
+	"author": "robsonhr16 <robhenrod@gmail.com>",
+	"license": "GPL2+",
+	"scripts": {
+		"start": "cgb-scripts start",
+		"build": "cgb-scripts build",
+		"eject": "cgb-scripts eject"
+	},
+	"dependencies": {
+		"cgb-scripts": "1.23.1",
+		"classnames": "^2.3.1"
+	}
+}
