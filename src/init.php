@@ -5,8 +5,6 @@
  *
  * Enqueue CSS/JS of all the blocks.
  *
- * @since   1.0.0
- * @package mb
  */
 
 // Exit if accessed directly.
@@ -14,80 +12,46 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 
-/**
- * Enqueue Gutenberg block assets for both frontend + backend.
- *
- * Assets enqueued:
- * 1. blocks.style.build.css - Frontend + Backend.
- * 2. blocks.build.js - Backend.
- * 3. blocks.editor.build.css - Backend.
- *
- * @uses {wp-blocks} for block type registration & related functions.
- * @uses {wp-element} for WP Element abstraction — structure of blocks.
- * @uses {wp-i18n} to internationalize the block's text.
- * @uses {wp-editor} for WP editor styles.
- * @since 1.0.0
- */
-function master_blocks_assets()
-{ // phpcs:ignore
-	// Register block styles for both frontend + backend.
-	wp_register_style(
-		'master-blocks-style-css', // Handle.
-		plugins_url('dist/blocks.style.build.css', dirname(__FILE__)), // Block style CSS.
-		is_admin() ? array('wp-editor') : null, // Dependency to include the CSS after it.
-		null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: File modification time.
-	);
+// automatically load dependencies and version
+$asset_file = include(plugin_dir_path(__DIR__) . '/build/index.asset.php');
 
-	// Register block editor script for backend.
-	wp_register_script(
-		'master-blocks-js', // Handle.
-		plugins_url('/dist/blocks.build.js', dirname(__FILE__)), // Block.build.js: We register the block here. Built with Webpack.
-		array('wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor'), // Dependencies, defined above.
-		null, // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ), // Version: filemtime — Gets file modification time.
-		true // Enqueue the script in the footer.
-	);
+class MasterGutenbergBlocksPackAssets
+{
+	function __construct()
+	{
+		add_action('enqueue_block_assets', array($this,  'blocksAssets'));
+		add_action('enqueue_block_editor_assets', array($this, 'blocksEditorAssets'));
+	}
 
-	// Register block editor styles for backend.
-	wp_register_style(
-		'master-blocks-editor-css', // Handle.
-		plugins_url('dist/blocks.editor.build.css', dirname(__FILE__)), // Block editor CSS.
-		array('wp-edit-blocks'), // Dependency to include the CSS after it.
-		null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' ) // Version: File modification time.
-	);
+	function blocksAssets()
+	{
+		// Styles.
+		wp_enqueue_style(
+			'master-blocks-style-css',
+			plugins_url('build/style-index.css', dirname(__FILE__)),
+			array('wp-editor'),
+			$asset_file['version'],
+		);
+	}
 
-	// WP Localized globals. Use dynamic PHP stuff in JavaScript via `mbGlobal` object.
-	wp_localize_script(
-		'master-blocks-js',
-		'mbGlobal', // Array containing dynamic data for a JS Global.
-		[
-			'pluginDirPath' => plugin_dir_path(__DIR__),
-			'pluginDirUrl'  => plugin_dir_url(__DIR__),
-			// Add more data here that you want to access from `mbGlobal` object.
-		]
-	);
+	function blocksEditorAssets()
+	{
+		// Scripts.
+		wp_enqueue_script(
+			'master-blocks-js', // Handle.
+			plugins_url('/build/index.js', dirname(__FILE__)),
+			$asset_file['dependencies'],
+			$asset_file['version'],
+		);
 
-	/**
-	 * Register Gutenberg block on server-side.
-	 *
-	 * Register the block on server-side to ensure that the block
-	 * scripts and styles for both frontend and backend are
-	 * enqueued when the editor loads.
-	 *
-	 * @link https://wordpress.org/gutenberg/handbook/blocks/writing-your-first-block-type#enqueuing-block-scripts
-	 * @since 1.16.0
-	 */
-	register_block_type(
-		'mb/block-title-with-border',
-		array(
-			// Enqueue blocks.style.build.css on both frontend & backend.
-			'style'         => 'master-blocks-style-css',
-			// Enqueue blocks.build.js in the editor only.
-			'editor_script' => 'master-blocks-js',
-			// Enqueue blocks.editor.build.css in the editor only.
-			'editor_style'  => 'master-blocks-editor-css',
-		)
-	);
+		// Styles.
+		wp_enqueue_style(
+			'master-blocks-editor-css', // Handle.
+			plugins_url('build/index.css', dirname(__FILE__)), // Block editor CSS.
+			array('wp-edit-blocks'), // Dependency to include the CSS after it.
+			$asset_file['version'],
+		);
+	}
 }
 
-// Hook: Block assets.
-add_action('init', 'master_blocks_assets');
+$masterGutenbergBlocksPackAssets = new MasterGutenbergBlocksPackAssets();

@@ -1,17 +1,36 @@
 {
 	"name": "master-gutenberg-blocks-pack",
-	"version": "1.0.0",
-	"main": "plugin.php",
-	"repository": "https://github.com/Robson16/master-gutenberg-blocks-pack.git",
-	"author": "robsonhr16 <robhenrod@gmail.com>",
-	"license": "GPL2+",
+	"version": "2.0.0",
+	"description": "The Master Gutenberg Blocks Pack is a plugin that adds some new custom blocks to the Gutenberg WordPress editor.",
+	"main": "master-gutenberg-blocks-pack.php",
 	"scripts": {
-		"start": "cgb-scripts start",
-		"build": "cgb-scripts build",
-		"eject": "cgb-scripts eject"
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Robson16/master-gutenberg-blocks-pack.git"
+	},
+	"keywords": [],
+	"author": "robsonhr16 <robhenrod@gmail.com>",
+	"license": "GPL-2.0-or-later",
+	"homepage": "",
 	"dependencies": {
-		"cgb-scripts": "1.23.1",
-		"classnames": "^2.3.1"
+		"@wordpress/block-editor": "^7.0.2",
+		"@wordpress/blocks": "^11.1.0",
+		"@wordpress/i18n": "^4.2.2",
+		"classnames": "^2.3.1",
+		"react-slick": "^0.28.1",
+		"slick-carousel": "^1.8.1"
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^9.1.2",
+		"@wordpress/prettier-config": "^1.0.1",
+		"@wordpress/scripts": "^18.0.1",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-import": "^2.24.2"
 	}
 }
