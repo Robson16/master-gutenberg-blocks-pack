@@ -6,7 +6,7 @@
  * Description:				The Master Gutenberg Blocks Pack is a plugin that adds some new custom blocks to the Gutenberg WordPress editor.
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Version:						2.0.0
+ * Version:						2.0.1
  * Author:						Robson H. Rodrigues
  * Author URI:				robsonhrodrigues.com.br
  * License:						GPL-2.0-or-later

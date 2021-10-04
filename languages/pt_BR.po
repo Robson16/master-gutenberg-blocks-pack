@@ -1,0 +1,504 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-04 11:06-0300\n"
+"PO-Revision-Date: 2021-10-04 11:06-0300\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n;_ex;_n_noop;esc_html__;esc_html_e;"
+"esc_html_x;esc_html_n;esc_html_ex\n"
+"X-Loco-Version: 2.5.0; wp-5.6.1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:77
+msgid "Heading text"
+msgstr "Texto do Título"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:78
+msgid "Heading"
+msgstr "Título"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:100
+msgid "Border"
+msgstr "Borda"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:104
+msgid "Colors"
+msgstr "Cores"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:110
+msgid "Color"
+msgstr "Cor"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:116
+msgid "Sides"
+msgstr "Lados"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:120
+msgid "Top"
+msgstr "Topo"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:129
+msgid "Right"
+msgstr "Direita"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:138
+msgid "Bottom"
+msgstr "Fundo"
+
+#: build/index.js:2 src/blocks/title-with-border/edit.js:147
+msgid "Left"
+msgstr "Esquerda"
+
+#: src/blocks/title-with-border/heading-level-dropdown.js:42
+msgid "Change heading level"
+msgstr "Alterar o nível do título"
+
+#: src/blocks/title-with-border/heading-level-dropdown.js:56
+#, javascript-format
+msgid "Heading %d"
+msgstr "Título %d"
+
+#: src/blocks/title-with-border/index.js:13
+msgid "Title with Border"
+msgstr "Título com Borda"
+
+#: src/blocks/title-with-border/index.js:16
+msgid "title"
+msgstr "título"
+
+#: src/blocks/title-with-border/index.js:16
+msgid "border"
+msgstr "borda"
+
+#~ msgid "Post Carousel"
+#~ msgstr "Carrossel de Postagens"
+
+#~ msgid "post"
+#~ msgstr "publicação"
+
+#~ msgid "carousel"
+#~ msgstr "carrossel"
+
+#~ msgid "Can't find this page"
+#~ msgstr "Página não encontrada"
+
+#~ msgid "It looks like nothing was found at this location"
+#~ msgstr "Parece que nada foi encontrado neste local"
+
+#~ msgid "Return to home page"
+#~ msgstr "Voltar para a página inicial"
+
+#~ msgid "Comments"
+#~ msgstr "Comentários"
+
+#~ msgid "Comments closed."
+#~ msgstr "Comentários estão fechados."
+
+#~ msgid "Leave a comment."
+#~ msgstr "Deixe um comentário."
+
+#~ msgid "Buy now"
+#~ msgstr "Compre Agora"
+
+#~ msgid "All rights reserved."
+#~ msgstr "Todos os direitos reservados."
+
+#~ msgid "Topbar Left"
+#~ msgstr "Barra superior à esquerda"
+
+#~ msgid "Topbar Right"
+#~ msgstr "Barra superior à direita"
+
+#~ msgid "Main Menu"
+#~ msgstr "Menu principal"
+
+#~ msgid "White"
+#~ msgstr "Branco"
+
+#~ msgid "Cultured"
+#~ msgstr "Culto"
+
+#~ msgid "Platinum"
+#~ msgstr "Platina"
+
+#~ msgid "Gainsboro"
+#~ msgstr "Gainsboro"
+
+#~ msgid "Light Gray"
+#~ msgstr "Cinza claro"
+
+#~ msgid "Jet"
+#~ msgstr "Jato"
+
+#~ msgid "Kobe"
+#~ msgstr "Kobe"
+
+#~ msgid "Black"
+#~ msgstr "Preto"
+
+#~ msgid "Small"
+#~ msgstr "Pequeno"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Medium"
+#~ msgstr "Médio"
+
+#~ msgid "Big"
+#~ msgstr "Grande"
+
+#~ msgid "Huge"
+#~ msgstr "Enorme"
+
+#~ msgid "Timeline Columns"
+#~ msgstr "Colunas como linha do tempo"
+
+#~ msgid "Footer #1"
+#~ msgstr "Rodapé #1"
+
+#~ msgid ""
+#~ "The widgets in this area will be displayed in the first column in Footer."
+#~ msgstr "Os widgets nesta área serão exibidos na primeira coluna no rodapé."
+
+#~ msgid "Footer #2"
+#~ msgstr "Rodapé #2"
+
+#~ msgid ""
+#~ "The widgets in this area will be displayed in the second column in Footer."
+#~ msgstr "Os widgets nesta área serão exibidos na segunda coluna no rodapé."
+
+#~ msgid "Footer #3"
+#~ msgstr "Rodapé #3"
+
+#~ msgid ""
+#~ "The widgets in this area will be displayed in the third column in Footer."
+#~ msgstr "Os widgets nesta área serão exibidos na terceira coluna no rodapé."
+
+#~ msgid "Footer #4"
+#~ msgstr "Rodapé #4"
+
+#~ msgid ""
+#~ "The widgets in this area will be displayed in the fourth column in Footer."
+#~ msgstr "Os widgets nessa área serão exibidos na quarta coluna no rodapé."
+
+#~ msgid "Sidebar Blog"
+#~ msgstr "Barra Lateral do Blog"
+
+#~ msgid "The widgets in this area will be displayed in the blog sidebar."
+#~ msgstr "Os widgets nesta área serão exibidos na barra lateral do blog."
+
+#~ msgid "Install Required Plugins"
+#~ msgstr "Instalar plugins necessários"
+
+#~ msgid "Install Plugins"
+#~ msgstr "Instalar plugins"
+
+#, php-format
+#~ msgid "Installing Plugin: %s"
+#~ msgstr "Instalando o Plugin: %s"
+
+#, php-format
+#~ msgid "Updating Plugin: %s"
+#~ msgstr "Atualizando o Plugin: %s"
+
+#~ msgid "Something went wrong with the plugin API."
+#~ msgstr "Algo deu errado com a API do plug-in."
+
+#, php-format
+#~ msgid "This theme requires the following plugin: %1$s."
+#~ msgstr "Este tema requer o seguinte plug-in: %1$s ."
+
+#, php-format
+#~ msgid "This theme recommends the following plugin: %1$s."
+#~ msgstr "Este tema recomenda o seguinte plugin: %1$s."
+
+#, php-format
+#~ msgid ""
+#~ "The following plugin needs to be updated to its latest version to ensure "
+#~ "maximum compatibility with this theme: %1$s."
+#~ msgstr ""
+#~ "O plugin a seguir precisa ser atualizado para sua versão mais recente "
+#~ "para garantir compatibilidade máxima com este tema: %1$s."
+
+#, php-format
+#~ msgid "There is an update available for: %1$s."
+#~ msgstr "Existe uma atualização disponível para: %1$s."
+
+#, php-format
+#~ msgid "The following required plugin is currently inactive: %1$s."
+#~ msgstr "O plugin necessário seguinte está atualmente inativo: %1$s."
+
+#, php-format
+#~ msgid "The following recommended plugin is currently inactive: %1$s."
+#~ msgstr "O seguinte plugin recomendado está inativo no momento: %1$s ."
+
+#~ msgid "Begin installing plugin"
+#~ msgstr "Comece a instalar o plug-in"
+
+#~ msgid "Begin updating plugin"
+#~ msgstr "Comece a atualizar o plugin"
+
+#~ msgid "Begin activating plugin"
+#~ msgstr "Comece a ativar o plug-in"
+
+#~ msgid "Return to Required Plugins Installer"
+#~ msgstr "Voltar para instalador de plugins necessários"
+
+#~ msgid "Return to the Dashboard"
+#~ msgstr "Retorne para o Dashboard"
+
+#~ msgid "Plugin activated successfully."
+#~ msgstr "Plugin ativado com sucesso."
+
+#~ msgid "The following plugin was activated successfully:"
+#~ msgstr "O plugin a seguir foi ativado com sucesso:"
+
+#, php-format
+#~ msgid "No action taken. Plugin %1$s was already active."
+#~ msgstr "Nenhuma ação tomada. O plugin %1$s já estava ativo."
+
+#, php-format
+#~ msgid ""
+#~ "Plugin not activated. A higher version of %s is needed for this theme. "
+#~ "Please update the plugin."
+#~ msgstr ""
+#~ "Plugin não ativado. Uma versão superior de %s é necessária para este "
+#~ "tema. Por favor, atualize o plugin."
+
+#, php-format
+#~ msgid "All plugins installed and activated successfully. %1$s"
+#~ msgstr "Todos os plugins instalados e ativados com sucesso. %1$s"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "Descartar essa notificação"
+
+#~ msgid ""
+#~ "There are one or more required or recommended plugins to install, update "
+#~ "or activate."
+#~ msgstr ""
+#~ "Há um ou mais plugins obrigatórios ou recomendados para instalar, "
+#~ "atualizar ou ativar."
+
+#~ msgid "Please contact the administrator of this site for help."
+#~ msgstr "Entre em contato com o administrador deste site para obter ajuda."
+
+#~ msgid "Update Required"
+#~ msgstr "Requer atualização"
+
+#, php-format
+#~ msgid "TGMPA v%s"
+#~ msgstr "TGMPA v%s"
+
+#~ msgid "Required"
+#~ msgstr "Requeridos"
+
+#~ msgid "Recommended"
+#~ msgstr "Recomendado"
+
+#~ msgid "WordPress Repository"
+#~ msgstr "Repositório WordPress"
+
+#~ msgid "External Source"
+#~ msgstr "Fonte externa"
+
+#~ msgid "Pre-Packaged"
+#~ msgstr "Pré-embalado"
+
+#~ msgid "Not Installed"
+#~ msgstr "Não instalado"
+
+#~ msgid "Installed But Not Activated"
+#~ msgstr "Instalado mas não ativado"
+
+#~ msgid "Active"
+#~ msgstr "Ativo"
+
+#~ msgid "Required Update not Available"
+#~ msgstr "Atualização necessária não disponível"
+
+#~ msgid "Requires Update"
+#~ msgstr "Requer atualização"
+
+#~ msgid "Update recommended"
+#~ msgstr "Atualização recomendada"
+
+#, php-format
+#~ msgid "%1$s, %2$s"
+#~ msgstr "%1$s, %2$s"
+
+#, php-format
+#~ msgid "To Install <span class=\"count\">(%s)</span>"
+#~ msgstr "Para instalar <span class=\"count\">(% s)</span>"
+
+#, php-format
+#~ msgid "Update Available <span class=\"count\">(%s)</span>"
+#~ msgstr "Atualização disponível <span class=\"count\">(% s)</span>"
+
+#, php-format
+#~ msgid "To Activate <span class=\"count\">(%s)</span>"
+#~ msgstr "Para ativar <span class=\"count\">(% s)</span>"
+
+#~ msgid "unknown"
+#~ msgstr "desconhecido"
+
+#~ msgid "Installed version:"
+#~ msgstr "Versão instalada:"
+
+#~ msgid "Minimum required version:"
+#~ msgstr "Versão mínima necessária:"
+
+#~ msgid "Available version:"
+#~ msgstr "Versão disponível:"
+
+#~ msgid "No plugins to install, update or activate."
+#~ msgstr "Nenhum plug-in para instalar, atualizar ou ativar."
+
+#~ msgid "Plugin"
+#~ msgstr "Plugin"
+
+#~ msgid "Source"
+#~ msgstr "Fonte"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "Version"
+#~ msgstr "Versão"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#, php-format
+#~ msgid "Install %2$s"
+#~ msgstr "Instale %2$s"
+
+#, php-format
+#~ msgid "Update %2$s"
+#~ msgstr "Atualizar %2$s"
+
+#, php-format
+#~ msgid "Activate %2$s"
+#~ msgstr "Ativar %2$s"
+
+#~ msgid "Install"
+#~ msgstr "Instalar"
+
+#~ msgid "Update"
+#~ msgstr "Atualizar"
+
+#~ msgid "Activate"
+#~ msgstr "Ativar"
+
+#~ msgid "No plugins were selected to be installed. No action taken."
+#~ msgstr ""
+#~ "Nenhum plugin foi selecionado para ser instalado. Nenhuma ação tomada."
+
+#~ msgid "No plugins were selected to be updated. No action taken."
+#~ msgstr ""
+#~ "Nenhum plugin foi selecionado para ser atualizado. Nenhuma ação tomada."
+
+#~ msgid "No plugins are available to be installed at this time."
+#~ msgstr "Nenhum plugin está disponível para ser instalado neste momento."
+
+#~ msgid "No plugins are available to be updated at this time."
+#~ msgstr "Nenhum plugin está disponível para ser atualizado no momento."
+
+#~ msgid "No plugins were selected to be activated. No action taken."
+#~ msgstr ""
+#~ "Nenhum plugin foi selecionado para ser atualizado. Nenhuma ação tomada."
+
+#~ msgid "No plugins are available to be activated at this time."
+#~ msgstr "Nenhum plugin está disponível para ser atualizado no momento."
+
+#~ msgid "Plugin activation failed."
+#~ msgstr "A ativação do plugin falhou."
+
+#, php-format
+#~ msgid "Updating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Atualizando o Plugin %1$s (%2$d/%3$d)"
+
+#, php-format
+#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+#~ msgstr ""
+#~ "Ocorreu um erro durante a instalação de %1$s: <strong>%2$s</ strong>."
+
+#, php-format
+#~ msgid "The installation of %1$s failed."
+#~ msgstr "A instalação de %1$s falhou."
+
+#~ msgid ""
+#~ "The installation and activation process is starting. This process may "
+#~ "take a while on some hosts, so please be patient."
+#~ msgstr ""
+#~ "O processo de instalação e ativação está sendo iniciado. Esse processo "
+#~ "pode demorar um pouco em alguns hosts, então, por favor, seja paciente."
+
+#, php-format
+#~ msgid "%1$s installed and activated successfully."
+#~ msgstr "%1$s instalado e ativado com sucesso."
+
+#~ msgid "All installations and activations have been completed."
+#~ msgstr "Todas as instalações e ativações foram concluídas."
+
+#, php-format
+#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Instalando e ativando o plug-in %1$s (%2$d/%3$d)"
+
+#~ msgid ""
+#~ "The installation process is starting. This process may take a while on "
+#~ "some hosts, so please be patient."
+#~ msgstr ""
+#~ "O processo de instalação está começando. Esse processo pode demorar um "
+#~ "pouco em alguns hosts, então, por favor, seja paciente."
+
+#, php-format
+#~ msgid "%1$s installed successfully."
+#~ msgstr "%1$s instalado com sucesso."
+
+#~ msgid "All installations have been completed."
+#~ msgstr "Todas as instalações foram concluídas."
+
+#, php-format
+#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Instalando o plug-in %1$s (%2$d/%3$d)"
+
+#~ msgid "Search results for:"
+#~ msgstr "Resultados da pesquisa por:"
+
+#~ msgid "Post"
+#~ msgstr "Post"
+
+#~ msgid "Read more"
+#~ msgstr "Leia mais"
+
+#~ msgid "No content to display"
+#~ msgstr "Nenhum conteúdo para exibir"
+
+#~ msgid "Featured"
+#~ msgstr "Destaque"
+
+#~ msgid "Search"
+#~ msgstr "Pesquisar"
+
+#~ msgid "Search for"
+#~ msgstr "Procurar por"
+
+#~ msgid "Search!"
+#~ msgstr "Pesquisar!"
+
+#~ msgid "Next Post"
+#~ msgstr "Próximo Post"
+
+#~ msgid "Previous Post"
+#~ msgstr "Post Anterior"

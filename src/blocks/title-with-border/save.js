@@ -29,10 +29,12 @@ const TitleWithBorderSave = ( { attributes, style } ) => {
 		<TagName
 			{ ...useBlockProps.save( {
 				className,
-				style: { ...style, borderColor: borderColor },
+				style,
 			} ) }
 		>
-			<RichText.Content value={ text } />
+			<span style={ { borderColor: borderColor } }>
+				<RichText.Content value={ text } />
+			</span>
 		</TagName>
 	);
 };

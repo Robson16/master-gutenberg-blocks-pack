@@ -2,3 +2,29 @@
 	Styles for backend.
 	Enqueued after style.scss
 */
+
+.has-border {
+	&-top {
+		padding-top: 0.5rem !important;
+		border-top-style: solid;
+		border-top-width: 3px;
+	}
+
+	&-right {
+		padding-right: 1rem !important;
+		border-right-style: solid;
+		border-right-width: 3px;
+	}
+
+	&-bottom {
+		padding-bottom: 0.5rem !important;
+		border-bottom-style: solid;
+		border-bottom-width: 3px;
+	}
+
+	&-left {
+		padding-left: 1rem !important;
+		border-left-style: solid;
+		border-left-width: 3px;
+	}
+}
