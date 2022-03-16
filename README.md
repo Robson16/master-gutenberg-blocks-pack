@@ -1,8 +1,8 @@
 <h1 align="center">
-  The Master Gutenberg Blocks Pack
+  Master Title with Border Block
 </h1>
 
-The Master Gutenberg Blocks Pack is a plugin that adds some new custom blocks to the Gutenberg WordPress editor.
+The Master Title with Border Block is a plugin for WordPress that add a new custom title block to the Gutenberg editor.
 
 ## 🛠 Technologies
 This project was developed with the following technologies

@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "master/title-with-border-block",
+	"version": "1.0.0",
+	"title": "Title With Border",
+	"category": "common",
+	"icon": "heading",
+	"description": "Title with Border options.",
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"color": true,
+		"fontSize": true
+	},
+	"attributes": {
+		"text": {
+			"type": "string"
+		},
+		"level": {
+			"type": "string",
+			"default": "2"
+		},
+		"textAlign": {
+			"type": "string",
+			"default": "left"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"borderTop": {
+			"type": "boolean"
+		},
+		"borderRight": {
+			"type": "boolean"
+		},
+		"borderBottom": {
+			"type": "boolean"
+		},
+		"borderLeft": {
+			"type": "boolean"
+		}
+	},
+	"textdomain": "masterblocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

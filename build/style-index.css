@@ -1,1 +1,43 @@
-.mb-block-title-with-border{font-weight:200!important;line-height:1.5}.mb-block-title-with-border b,.mb-block-title-with-border strong{font-weight:600}.mb-block-title-with-border span{display:inline-block}.has-border-top span{border-top-style:solid;border-top-width:3px;padding-top:.5rem!important}.has-border-right span{border-right-style:solid;border-right-width:3px;padding-right:1rem!important}.has-border-bottom span{border-bottom-style:solid;border-bottom-width:3px;padding-bottom:.5rem!important}.has-border-left span{border-left-style:solid;border-left-width:3px;padding-left:1rem!important}
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.master-title-with-border-block {
+  font-weight: 200 !important;
+  line-height: 1.5;
+}
+.master-title-with-border-block b,
+.master-title-with-border-block strong {
+  font-weight: 600;
+}
+.master-title-with-border-block span {
+  display: inline-block;
+}
+
+.has-border-top span {
+  padding-top: 0.5rem !important;
+  border-top-style: solid;
+  border-top-width: 3px;
+}
+.has-border-right span {
+  padding-right: 1rem !important;
+  border-right-style: solid;
+  border-right-width: 3px;
+}
+.has-border-bottom span {
+  padding-bottom: 0.5rem !important;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
+.has-border-left span {
+  padding-left: 1rem !important;
+  border-left-style: solid;
+  border-left-width: 3px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
