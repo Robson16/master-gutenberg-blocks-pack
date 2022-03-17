@@ -10,7 +10,10 @@
 	"supports": {
 		"align": [
 			"wide",
-			"full"
+			"full",
+			"center",
+			"left",
+			"right"
 		],
 		"anchor": true,
 		"color": true,

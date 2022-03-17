@@ -4,6 +4,18 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+.master-title-with-border-block {
+	display: inline-block;
+}
+
+.wp-block[data-align="center"] {
+	.master-title-with-border-block {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .has-border {
 	&-top {
 		padding-top: 0.5rem !important;

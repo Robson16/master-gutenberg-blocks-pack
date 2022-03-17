@@ -15,7 +15,7 @@ import './style.scss';
 import Edit from './edit';
 import save from './save';
 
-registerBlockType('master/title-with-border-block', {
+registerBlockType( 'master/title-with-border-block', {
 	/**
 	 * @see ./edit.js
 	 */
@@ -25,5 +25,4 @@ registerBlockType('master/title-with-border-block', {
 	 * @see ./save.js
 	 */
 	save,
-});
-
+} );
