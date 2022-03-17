@@ -1,4 +1,4 @@
-import { registerBlockType } from '@wordpress/blocks';
+import { registerBlockType, registerBlockStyle } from '@wordpress/blocks';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -25,4 +25,9 @@ registerBlockType( 'master/title-with-border-block', {
 	 * @see ./save.js
 	 */
 	save,
+} );
+
+registerBlockStyle( 'master/title-with-border-block', {
+	name: 'from-screen-left-edge',
+	label: 'From screen left edge',
 } );

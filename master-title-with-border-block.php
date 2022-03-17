@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:       Master Title With Border Block
  * Description:       Example block written with ESNext standard and JSX support – build step required.
@@ -20,7 +21,8 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_master_title_with_border_block_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function master_title_with_border_block_init()
+{
+	register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'create_block_master_title_with_border_block_block_init' );
+add_action('init', 'master_title_with_border_block_init');

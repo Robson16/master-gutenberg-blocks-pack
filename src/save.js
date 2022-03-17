@@ -19,6 +19,7 @@ export default function save( { attributes, style } ) {
 	const className = classnames( {
 		[ `has-text-align-${ textAlign }` ]: textAlign,
 		'master-title-with-border-block': true,
+		'has-border': borderTop | borderRight | borderBottom | borderLeft,
 		'has-border-top': borderTop,
 		'has-border-right': borderRight,
 		'has-border-bottom': borderBottom,
@@ -29,10 +30,10 @@ export default function save( { attributes, style } ) {
 		<TagName
 			{ ...useBlockProps.save( {
 				className,
-				style,
+				style: { ...style, borderColor: borderColor },
 			} ) }
 		>
-			<span style={ { borderColor: borderColor } }>
+			<span>
 				<RichText.Content value={ text } />
 			</span>
 		</TagName>
