@@ -27,15 +27,15 @@ export default function save( { attributes, style } ) {
 	} );
 
 	return (
-		<TagName
+		<div
 			{ ...useBlockProps.save( {
 				className,
 				style: { ...style, borderColor: borderColor },
 			} ) }
 		>
-			<span>
+			<TagName>
 				<RichText.Content value={ text } />
-			</span>
-		</TagName>
+			</TagName>
+		</div>
 	);
 }

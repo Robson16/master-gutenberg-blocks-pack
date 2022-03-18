@@ -6,11 +6,14 @@
  */
 
 .master-title-with-border-block {
-	line-height: 1.5 !important;
-
-	p {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		display: inline-block;
-		margin: 0 !important;
+		font-size: inherit;
 	}
 
 	b,
@@ -18,76 +21,43 @@
 		font-weight: 600;
 	}
 
-	span {
-		display: inline-block;
-	}
-
-	&.alignleft,
-	&.aligncenter,
-	&.alignright {
-		display: flex;
-	}
-
-	&.alignleft {
-		justify-content: flex-start;
-	}
-
-	&.aligncenter {
-		justify-content: center;
-	}
-
-	&.alignright {
-		justify-content: flex-end;
-	}
-
-	&:not(.block-editor-block-list__block) {
-		&.has-text-align-left,
-		&.has-text-align-center,
-		&.has-text-align-right {
-			text-align: unset;
-		}
-	}
-
-	&.has-text-align-left {
-		span {
-			text-align: left;
-		}
-	}
-
-	&.has-text-align-center {
-		span {
-			text-align: center;
-		}
-	}
-
-	&.has-text-align-right {
-		span {
-			text-align: right;
-		}
-	}
-
 	&.has-border {
 		&-top {
-			span {
-				padding-top: 0.5rem !important;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				padding-top: 1rem !important;
 				border-top-style: solid;
 				border-top-width: 4px;
-				border-bottom-color: inherit;
+				border-top-color: inherit;
 			}
 		}
 
 		&-right {
-			span {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
 				padding-right: 1rem !important;
 				border-right-style: solid;
 				border-right-width: 4px;
-				border-bottom-color: inherit;
+				border-right-color: inherit;
 			}
 		}
 
 		&-bottom {
-			span {
-				padding-bottom: 0.5rem !important;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				padding-bottom: 1rem !important;
 				border-bottom-style: solid;
 				border-bottom-width: 4px;
 				border-bottom-color: inherit;
@@ -95,126 +65,167 @@
 		}
 
 		&-left {
-			span {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
 				padding-left: 1rem !important;
 				border-left-style: solid;
 				border-left-width: 4px;
-				border-bottom-color: inherit;
+				border-left-color: inherit;
 			}
 		}
 
 		&.is-style-from-screen-left-edge {
-			position: relative;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				position: relative;
 
-			&::after {
-				content: "";
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				width: 100%;
-				border-bottom-style: solid;
-				border-bottom-width: 4px;
-				border-bottom-color: inherit;
-
-				@media (max-width: 575.98px) {
-					width: calc(100% - 50vw);
-					left: -1.2rem;
-				}
-
-				// Small devices (landscape phones, 576px and up)
-				@media (min-width: 576px) and (max-width: 767.98px) {
-					width: calc(100vw - 540px);
-					left: calc((100vw - 540px - 1rem) * -1);
-				}
-
-				// Medium devices (tablets, 768px and up)
-				@media (min-width: 768px) and (max-width: 991.98px) {
-					width: calc(100vw - 720px);
-					left: calc((100vw - 720px - 1rem) * -1);
-				}
-
-				// Large devices (desktops, 992px and up)
-				@media (min-width: 992px) and (max-width: 1199.98px) {
-					width: calc(100vw - 960px);
-					left: calc((100vw - 960px - 1rem) * -1);
-				}
-
-				// X-Large devices (large desktops, 1200px and up)
-				@media (min-width: 1200px) and (max-width: 1399.98px) {
-					width: calc(100vw - 1140px);
-					left: calc((100vw - 1140px - 1rem) * -1);
-				}
-
-				// XX-Large devices (larger desktops, 1400px and up)
-				@media (min-width: 1400px) {
-					width: calc(100vw - 1320px);
-					left: calc((100vw - 1320px - 1rem) * -1);
-				}
-			}
-		}
-
-		&.aligncenter {
-			&.is-style-from-screen-left-edge {
 				&::after {
-					// Small devices (landscape phones, 576px and up)
-					@media (min-width: 576px) and (max-width: 767.98px) {
-						width: calc(100vw - 270px);
-					}
+					content: "";
+					position: absolute;
+					top: 100%;
+					bottom: 0;
+					width: 100%;
+					border-bottom-style: solid;
+					border-bottom-width: 4px;
+					border-bottom-color: inherit;
 
-					// Medium devices (tablets, 768px and up)
-					@media (min-width: 768px) and (max-width: 991.98px) {
-						width: calc(100vw - 360px);
-					}
-
-					// Large devices (desktops, 992px and up)
-					@media (min-width: 992px) and (max-width: 1199.98px) {
-						width: calc(100vw - 480px);
-					}
-
-					// X-Large devices (large desktops, 1200px and up)
-					@media (min-width: 1200px) and (max-width: 1399.98px) {
-						width: calc(100vw - 570px);
-					}
-
-					// XX-Large devices (larger desktops, 1400px and up)
-					@media (min-width: 1400px) {
-						width: calc(100vw - 660px);
-					}
-				}
-			}
-		}
-
-		&.alignright {
-			&.is-style-from-screen-left-edge {
-				&::after {
 					@media (max-width: 575.98px) {
-						width: 100%;
+						width: calc(100% - 50vw);
 						left: -1.2rem;
 					}
 
 					// Small devices (landscape phones, 576px and up)
 					@media (min-width: 576px) and (max-width: 767.98px) {
-						width: 100vw;
+						width: calc(100vw - 540px);
+						left: calc((100vw - 540px - 1rem) * -1);
 					}
 
 					// Medium devices (tablets, 768px and up)
 					@media (min-width: 768px) and (max-width: 991.98px) {
-						width: 100vw;
+						width: calc(100vw - 720px);
+						left: calc((100vw - 720px - 1rem) * -1);
 					}
 
 					// Large devices (desktops, 992px and up)
 					@media (min-width: 992px) and (max-width: 1199.98px) {
-						width: 100vw;
+						width: calc(100vw - 960px);
+						left: calc((100vw - 960px - 1rem) * -1);
 					}
 
 					// X-Large devices (large desktops, 1200px and up)
 					@media (min-width: 1200px) and (max-width: 1399.98px) {
-						width: 100vw;
+						width: calc(100vw - 1140px);
+						left: calc((100vw - 1140px - 1rem) * -1);
 					}
 
 					// XX-Large devices (larger desktops, 1400px and up)
 					@media (min-width: 1400px) {
-						width: 100vw;
+						width: calc(100vw - 1320px);
+						left: calc((100vw - 1320px - 1rem) * -1);
+					}
+				}
+			}
+		}
+
+		&.has-text-align-center {
+			&.is-style-from-screen-left-edge {
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					&::after {
+						@media (max-width: 575.98px) {
+							width: calc(100% - 50vw);
+							left: -1.2rem;
+						}
+
+						// Small devices (landscape phones, 576px and up)
+						@media (min-width: 576px) and (max-width: 767.98px) {
+							width: calc(100vw - 135px);
+							left: calc((100vw - 135px - 1rem) * -1);
+						}
+
+						// Medium devices (tablets, 768px and up)
+						@media (min-width: 768px) and (max-width: 991.98px) {
+							width: calc(100vw - 360px);
+							left: calc((100vw - 360px - 1rem) * -1);
+						}
+
+						// Large devices (desktops, 992px and up)
+						@media (min-width: 992px) and (max-width: 1199.98px) {
+							width: calc(100vw - 480px);
+							left: calc((100vw - 480px - 1rem) * -1);
+						}
+
+						// X-Large devices (large desktops, 1200px and up)
+						@media (min-width: 1200px) and (max-width: 1399.98px) {
+							width: calc(100vw - 570px);
+							left: calc((100vw - 570px - 1rem) * -1);
+						}
+
+						// XX-Large devices (larger desktops, 1400px and up)
+						@media (min-width: 1400px) {
+							width: calc(100vw - 660px);
+							left: calc((100vw - 660px - 1rem) * -1);
+						}
+					}
+				}
+			}
+		}
+
+		&.has-text-align-right {
+			&.is-style-from-screen-left-edge {
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					&::after {
+						@media (max-width: 575.98px) {
+							width: calc(100% - 50vw);
+							left: -1.2rem;
+						}
+
+						// Small devices (landscape phones, 576px and up)
+						@media (min-width: 576px) and (max-width: 767.98px) {
+							width: calc(100vw - 135px);
+							left: calc((100vw - 135px - 1rem) * -1);
+						}
+
+						// Medium devices (tablets, 768px and up)
+						@media (min-width: 768px) and (max-width: 991.98px) {
+							width: calc(100vw - 180px);
+							left: calc((100vw - 180px - 1rem) * -1);
+						}
+
+						// Large devices (desktops, 992px and up)
+						@media (min-width: 992px) and (max-width: 1199.98px) {
+							width: calc(100vw - 240px);
+							left: calc((100vw - 240px - 1rem) * -1);
+						}
+
+						// X-Large devices (large desktops, 1200px and up)
+						@media (min-width: 1200px) and (max-width: 1399.98px) {
+							width: calc(100vw - 285px);
+							left: calc((100vw - 285px - 1rem) * -1);
+						}
+
+						// XX-Large devices (larger desktops, 1400px and up)
+						@media (min-width: 1400px) {
+							width: calc(100vw - 330px);
+							left: calc((100vw - 330px - 1rem) * -1);
+						}
 					}
 				}
 			}

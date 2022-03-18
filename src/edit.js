@@ -51,19 +51,22 @@ export default function Edit( {
 
 	return (
 		<Fragment>
-			<RichText
-				identifier="content"
-				tagName={ tagName }
-				value={ text }
-				onChange={ ( newText ) => setAttributes( { text: newText } ) }
-				onMerge={ mergeBlocks }
-				onReplace={ onReplace }
-				onRemove={ () => onReplace( [] ) }
-				aria-label={ wp.i18n.__( 'Heading text', 'masterblocks' ) }
-				placeholder={ wp.i18n.__( 'Heading', 'masterblocks' ) }
-				textAlign={ textAlign }
-				{ ...blockProps }
-			/>
+			<div { ...blockProps }>
+				<RichText
+					identifier="content"
+					tagName={ tagName }
+					value={ text }
+					onChange={ ( newText ) =>
+						setAttributes( { text: newText } )
+					}
+					onMerge={ mergeBlocks }
+					onReplace={ onReplace }
+					onRemove={ () => onReplace( [] ) }
+					aria-label={ wp.i18n.__( 'Heading text', 'masterblocks' ) }
+					placeholder={ wp.i18n.__( 'Heading', 'masterblocks' ) }
+					textAlign={ textAlign }
+				/>
+			</div>
 
 			<BlockControls>
 				<HeadingLevelDropdown
