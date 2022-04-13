@@ -4,5 +4,12 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+div[data-align="center"] {
+	.master-title-with-border-block {
+		display: flex;
+		justify-content: center;
+	}
+}
+
 .master-title-with-border-block {
 }

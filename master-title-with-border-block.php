@@ -2,11 +2,12 @@
 
 /**
  * Plugin Name:       Master Title With Border Block
- * Description:       Example block written with ESNext standard and JSX support – build step required.
+ * Description:       A plugin that add a new custom title block to the Gutenberg editor.
  * Requires at least: 5.8
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Robson H. Rodrigues
+ * Author URI:				https://robsonhrodrigues.com.br/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       master-title-with-border-block

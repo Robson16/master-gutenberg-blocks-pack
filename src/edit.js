@@ -21,7 +21,6 @@ export default function Edit( {
 	mergeBlocks,
 	onReplace,
 	style,
-	clientId,
 } ) {
 	const {
 		text,
@@ -40,7 +39,8 @@ export default function Edit( {
 		className: classnames( {
 			[ `has-text-align-${ textAlign }` ]: textAlign,
 			'master-title-with-border-block': true,
-			'has-border': borderTop | borderRight | borderBottom | borderLeft,
+			'has-border':
+				borderTop || borderRight || borderBottom || borderLeft,
 			'has-border-top': borderTop,
 			'has-border-right': borderRight,
 			'has-border-bottom': borderBottom,
@@ -62,8 +62,8 @@ export default function Edit( {
 					onMerge={ mergeBlocks }
 					onReplace={ onReplace }
 					onRemove={ () => onReplace( [] ) }
-					aria-label={ wp.i18n.__( 'Heading text', 'masterblocks' ) }
-					placeholder={ wp.i18n.__( 'Heading', 'masterblocks' ) }
+					aria-label={ __( 'Heading text', 'masterblocks' ) }
+					placeholder={ __( 'Heading', 'masterblocks' ) }
 					textAlign={ textAlign }
 				/>
 			</div>
@@ -85,27 +85,27 @@ export default function Edit( {
 
 			<InspectorControls>
 				<PanelBody
-					title={ wp.i18n.__( 'Border', 'masterblocks' ) }
+					title={ __( 'Border', 'masterblocks' ) }
 					initialOpen={ false }
 				>
 					<PanelColorSettings
-						title={ wp.i18n.__( 'Colors', 'masterblocks' ) }
+						title={ __( 'Colors', 'masterblocks' ) }
 						colorSettings={ [
 							{
 								value: borderColor,
 								onChange: ( color ) =>
 									setAttributes( { borderColor: color } ),
-								label: wp.i18n.__( 'Color', 'masterblocks' ),
+								label: __( 'Color', 'masterblocks' ),
 							},
 						] }
 					/>
 
 					<PanelRow>
-						<h3>{ wp.i18n.__( 'Sides', 'masterblocks' ) }</h3>
+						<h3>{ __( 'Sides', 'masterblocks' ) }</h3>
 					</PanelRow>
 					<PanelRow>
 						<CheckboxControl
-							label={ wp.i18n.__( 'Top', 'masterblocks' ) }
+							label={ __( 'Top', 'masterblocks' ) }
 							checked={ borderTop }
 							onChange={ ( newValue ) => {
 								setAttributes( { borderTop: newValue } );
@@ -114,7 +114,7 @@ export default function Edit( {
 					</PanelRow>
 					<PanelRow>
 						<CheckboxControl
-							label={ wp.i18n.__( 'Right', 'masterblocks' ) }
+							label={ __( 'Right', 'masterblocks' ) }
 							checked={ borderRight }
 							onChange={ ( newValue ) => {
 								setAttributes( { borderRight: newValue } );
@@ -123,7 +123,7 @@ export default function Edit( {
 					</PanelRow>
 					<PanelRow>
 						<CheckboxControl
-							label={ wp.i18n.__( 'Bottom', 'masterblocks' ) }
+							label={ __( 'Bottom', 'masterblocks' ) }
 							checked={ borderBottom }
 							onChange={ ( newValue ) => {
 								setAttributes( { borderBottom: newValue } );
@@ -132,7 +132,7 @@ export default function Edit( {
 					</PanelRow>
 					<PanelRow>
 						<CheckboxControl
-							label={ wp.i18n.__( 'Left', 'masterblocks' ) }
+							label={ __( 'Left', 'masterblocks' ) }
 							checked={ borderLeft }
 							onChange={ ( newValue ) => {
 								setAttributes( { borderLeft: newValue } );

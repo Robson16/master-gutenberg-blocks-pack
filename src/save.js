@@ -1,4 +1,3 @@
-import { __ } from '@wordpress/i18n';
 import { RichText, useBlockProps } from '@wordpress/block-editor';
 import classnames from 'classnames';
 
@@ -19,7 +18,7 @@ export default function save( { attributes, style } ) {
 	const className = classnames( {
 		[ `has-text-align-${ textAlign }` ]: textAlign,
 		'master-title-with-border-block': true,
-		'has-border': borderTop | borderRight | borderBottom | borderLeft,
+		'has-border': borderTop || borderRight || borderBottom || borderLeft,
 		'has-border-top': borderTop,
 		'has-border-right': borderRight,
 		'has-border-bottom': borderBottom,
